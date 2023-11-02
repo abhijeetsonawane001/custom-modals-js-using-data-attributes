@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Modals in JavaScript Using Data Attributes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Start Modal 1 -->
+    <div class="modal" data-modal="custom-modal">
+      <div class="modal-content">
+        <span class="close" data-close-modal="custom-modal">&times;</span>
+        <p>Your modal content goes here.</p>
+      </div>
+    </div>
+
+    <button data-open-modal="custom-modal">Open Modal</button>
+    <!-- End Modal 1 -->
+
+    <!-- Start Modal 2 -->
+
+    <div class="modal" data-modal="custom-modal2">
+      <div class="modal-content">
+        <span class="close" data-close-modal="custom-modal2">&times;</span>
+        <p>Your modal 2 content goes here.</p>
+      </div>
+    </div>
+
+    <button data-open-modal="custom-modal2">Open Modal 2</button>
+    <!-- Start Modal 2 -->
+
+    <script src="app.js"></script>
+  </body>
+</html>
