@@ -3,32 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Custom Modals in JavaScript Using Data Attributes</title>
+    <title>Custom Modals in Javascript using Data Attributes</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Start Modal 1 -->
-    <div class="modal" data-modal="custom-modal">
+    <!-- Modal 1 container -->
+    <div class="modal" id="custom-modal1">
+      <!-- Modal content -->
       <div class="modal-content">
-        <span class="close" data-close-modal="custom-modal">&times;</span>
-        <p>Your modal content goes here.</p>
+        <!-- Modal header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal 1 Title</h4>
+          <!-- Close modal -->
+          <span class="close" data-modal-hide="custom-modal1">&times;</span>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Consectetur harum reiciendis iusto dolore maxime aliquam alias. Rem
+            aliquam minima excepturi.
+          </p>
+        </div>
       </div>
     </div>
-
-    <button data-open-modal="custom-modal">Open Modal</button>
-    <!-- End Modal 1 -->
-
-    <!-- Start Modal 2 -->
-
-    <div class="modal" data-modal="custom-modal2">
+    <button class="btn-primary" data-modal-show="custom-modal1">
+      Open Modal 1
+    </button>
+    <!-- Modal 2 container -->
+    <div class="modal" id="custom-modal2">
+      <!-- Modal content -->
       <div class="modal-content">
-        <span class="close" data-close-modal="custom-modal2">&times;</span>
-        <p>Your modal 2 content goes here.</p>
+        <!-- Modal header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal 2 Title</h4>
+          <!-- Close modal -->
+          <span class="close" data-modal-hide="custom-modal2">&times;</span>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Consectetur harum reiciendis iusto dolore maxime aliquam alias. Rem
+            aliquam minima excepturi.
+          </p>
+        </div>
       </div>
     </div>
-
-    <button data-open-modal="custom-modal2">Open Modal 2</button>
-    <!-- Start Modal 2 -->
+    <button class="btn-primary" data-modal-show="custom-modal2">
+      Open Modal 2
+    </button>
 
     <script src="app.js"></script>
   </body>
